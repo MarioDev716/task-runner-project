@@ -1,11 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Zilla+Slab:wght@300&display=swap);
 
+/* Variables */
+
 $sans-serif: 'Montserrat', sans-serif;
 $serif: 'Zilla Slab', serif;
 $color-accent: #fed136;
+$color-2: #7f7f7f;
+
+/* Global */
 
 * {
-    // border: 1px dotted white;
+    border: 1px dotted white; //my lovely helper!
 }
 
 body {
@@ -17,6 +22,17 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $sans-serif;
+}
+
+.shad-box {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.shad-txt {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.514);
+}
+.rounded {
+    border-radius: 5px;
 }
 
 /* Navbar */
@@ -42,11 +58,12 @@ nav {
     a {
         color: #ffff;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
         text-transform: uppercase;
         font-family: $sans-serif;
         transition: 0.5s all;
         border-bottom: 2px solid #fed33600;
+        font-size: 14px;
     }
     a:hover {
         border-bottom: 2px solid $color-accent;
@@ -61,5 +78,54 @@ nav {
     background-image: url("/images/zadanie-golden-splash.png");
     height: 700px;
     background-size: cover;
-    
+}
+
+.splash-text {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 122px);
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    .row {
+        padding: 0;
+        margin: 0;
+    }
+    .col {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+    h1 {
+        color: #ffff;
+        font-size: 41px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        color: $color-2;
+        margin: 0;
+        padding: 0;
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $color-accent;
+        width: 240px;
+        height: 65px;
+        cursor: pointer;
+        a {
+                   color: #ffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $sans-serif;
+        font-weight: 600;
+        font-size: 18px; 
+        }
+
+    }
 }

@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Zilla+Slab:wght@300&display=swap);
+/* Variables */
+/* Global */
+* {
+  border: 1px dotted white;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +14,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
+}
+
+.shad-box {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.shad-txt {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.514);
+}
+
+.rounded {
+  border-radius: 5px;
 }
 
 /* Navbar */
@@ -33,11 +51,12 @@ nav ul li {
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   transition: 0.5s all;
   border-bottom: 2px solid rgba(254, 211, 54, 0);
+  font-size: 14px;
 }
 nav a:hover {
   border-bottom: 2px solid #fed136;
@@ -49,4 +68,52 @@ nav a:hover {
   background-image: url("/images/zadanie-golden-splash.png");
   height: 700px;
   background-size: cover;
+}
+
+.splash-text {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 122px);
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.splash-text .row {
+  padding: 0;
+  margin: 0;
+}
+.splash-text .col {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.splash-text h1 {
+  color: white;
+  font-size: 41px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.splash-text h2 {
+  color: #7f7f7f;
+  margin: 0;
+  padding: 0;
+}
+.splash-text .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fed136;
+  width: 240px;
+  height: 65px;
+  cursor: pointer;
+}
+.splash-text .btn a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
