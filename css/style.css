@@ -1,6 +1,52 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Zilla+Slab:wght@300&display=swap);
 body {
   margin: 0;
   padding: 0;
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFNBQUE7RUFDQSxVQUFBO0FDQ0oiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */
+nav {
+  padding: 43px 0;
+}
+nav .col {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+nav ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  padding-left: 40px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s all;
+  border-bottom: 2px solid rgba(254, 211, 54, 0);
+}
+nav a:hover {
+  border-bottom: 2px solid #fed136;
+}
+
+/* Splash */
+.splash {
+  background: #7f7f7f;
+  background-image: url("/images/zadanie-golden-splash.png");
+  height: 700px;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
