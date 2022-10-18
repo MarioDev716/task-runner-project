@@ -3,7 +3,6 @@
 /* Global */
 * {
   box-sizing: border-box;
-  border: 1px dotted rgb(255, 0, 0);
 }
 
 body {
@@ -44,7 +43,7 @@ h1 {
 }
 
 .container {
-  max-width: 942px;
+  max-width: 990px;
 }
 
 .section-desc {
@@ -60,7 +59,7 @@ nav {
   padding: 45px 0;
 }
 nav .golden-logo {
-  margin-left: 7px;
+  margin-left: 32px;
 }
 nav .col {
   display: flex;
@@ -74,6 +73,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 26px;
 }
 nav ul li {
   padding-left: 39px;
@@ -164,4 +164,12 @@ nav a:hover {
 }
 .services .wrapper h3 {
   color: black;
+  margin-top: 15px;
+  margin-bottom: 9px;
+}
+.services .wrapper p {
+  margin-top: 0;
+}
+.services .wrapper .row {
+  padding-top: 75px;
 }/*# sourceMappingURL=style.css.map */
