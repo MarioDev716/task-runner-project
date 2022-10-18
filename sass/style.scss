@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@200;300;400&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@200;300;400&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Birthstone:regular);
 
 $sans-serif: 'Montserrat', sans-serif;
@@ -197,5 +197,26 @@ nav {
     }
     .row {
         padding-top: 75px;
+        height: 380px;
+    }
+}
+
+/* Portfolio */
+
+.portfolio {
+    .row {
+        padding-top: 70px;
+    }
+    .card-title {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+    .card-text {
+        font-style: italic;
+        font-size: 12px;
+    }
+    text-align: center;
+    .col-4 {
+        height: 450px;
     }
 }

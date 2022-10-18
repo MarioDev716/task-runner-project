@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@200;300;400&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@200;300;400&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Birthstone:regular);
 /* Global */
 * {
@@ -172,4 +172,24 @@ nav a:hover {
 }
 .services .wrapper .row {
   padding-top: 75px;
+  height: 380px;
+}
+
+/* Portfolio */
+.portfolio {
+  text-align: center;
+}
+.portfolio .row {
+  padding-top: 70px;
+}
+.portfolio .card-title {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.portfolio .card-text {
+  font-style: italic;
+  font-size: 12px;
+}
+.portfolio .col-4 {
+  height: 450px;
 }/*# sourceMappingURL=style.css.map */
