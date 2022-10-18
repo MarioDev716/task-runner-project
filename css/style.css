@@ -1,19 +1,34 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Zilla+Slab:wght@300&display=swap);
-/* Variables */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@200;300;400&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Birthstone:regular);
 /* Global */
 * {
-  border: 1px dotted white;
+  box-sizing: border-box;
+  border: 1px dotted rgb(255, 0, 0);
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Zilla Slab", serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center !important;
+  padding-top: 74px;
+  font-weight: 800;
+  font-size: 38px;
+  margin-bottom: 9px;
 }
 
 .shad-box {
@@ -28,9 +43,24 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
 }
 
+.container {
+  max-width: 942px;
+}
+
+.section-desc {
+  text-align: center;
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  color: #7f7f7f;
+}
+
 /* Navbar */
 nav {
-  padding: 43px 0;
+  padding: 45px 0;
+}
+nav .golden-logo {
+  margin-left: 7px;
 }
 nav .col {
   display: flex;
@@ -46,7 +76,7 @@ nav ul {
   margin: 0;
 }
 nav ul li {
-  padding-left: 40px;
+  padding-left: 39px;
 }
 nav a {
   color: white;
@@ -94,11 +124,19 @@ nav a:hover {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
+  font-size: 70px;
+  font-weight: 700;
 }
 .splash-text h2 {
-  color: #7f7f7f;
+  color: white;
   margin: 0;
   padding: 0;
+  padding-top: 130px;
+  font-family: "Birthstone", cursive;
+  font-size: 64px;
+  font-weight: 500;
+  font-style: italic;
 }
 .splash-text .btn {
   display: flex;
@@ -107,6 +145,7 @@ nav a:hover {
   background: #fed136;
   width: 240px;
   height: 65px;
+  margin-top: 45px;
   cursor: pointer;
 }
 .splash-text .btn a {
@@ -116,4 +155,13 @@ nav a:hover {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
+}
+
+/* Services */
+.services .wrapper {
+  text-align: center;
+  color: #7f7f7f;
+}
+.services .wrapper h3 {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
