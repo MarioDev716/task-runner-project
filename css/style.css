@@ -98,7 +98,7 @@ nav a:hover {
 .splash {
   background: #7f7f7f;
   background-image: url("/images/zadanie-golden-splash.png");
-  height: 700px;
+  min-height: 700px;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -149,7 +149,9 @@ nav a:hover {
   width: 240px;
   height: 65px;
   margin-top: 45px;
+  margin-bottom: 80px;
   cursor: pointer;
+  transition: all 1s;
 }
 .splash-text .btn a {
   color: white;
@@ -159,10 +161,20 @@ nav a:hover {
   font-weight: 600;
   font-size: 18px;
 }
+.splash-text .btn:hover {
+  rotate: 3deg;
+  transition: all 0.3s;
+}
 
 /* Services */
 .services {
   background: white;
+}
+.services .col-12 {
+  padding: 20px 80px;
+}
+.services .col-lg-4 {
+  padding: 0 15px;
 }
 .services .wrapper {
   text-align: center;
@@ -178,7 +190,8 @@ nav a:hover {
 }
 .services .wrapper .row {
   padding-top: 75px;
-  height: 380px;
+  min-height: 380px;
+  display: flex;
 }
 
 /* Portfolio */
@@ -188,11 +201,21 @@ nav a:hover {
 .portfolio .row {
   padding-top: 75px;
   display: inline-flex;
+  justify-content: center;
 }
 .portfolio .card {
   width: 293px;
   height: 392px;
   background: white;
+  cursor: pointer;
+  transition: all 1s;
+}
+.portfolio .card img {
+  width: 100%;
+}
+.portfolio .card:hover {
+  rotate: 3deg;
+  transition: all 0.5s;
 }
 .portfolio .card-title {
   margin-top: 21px;
@@ -203,8 +226,13 @@ nav a:hover {
   font-style: italic;
   font-size: 14px;
 }
-.portfolio .col-4 {
+.portfolio .col-lg-4 {
   margin-bottom: 52px;
+}
+.portfolio .col-12 {
+  margin-bottom: 52px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Footer */
@@ -234,9 +262,20 @@ footer .row .col {
 footer img {
   filter: brightness(0.9) grayscale(0);
   cursor: pointer;
-  transition: all 0.9s;
+  transition: all 1s;
 }
 footer img:hover {
   filter: brightness(0.9) grayscale(50);
-  transition: all 0.9s;
+  transition: all 0.3s;
+  margin-top: -5px;
+  rotate: 3deg;
+}
+
+/* Media screen smaller than 1000px */
+@media screen and (max-width: 1000px) {
+  footer .footer-txt {
+    top: 60px;
+    left: auto;
+    right: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
