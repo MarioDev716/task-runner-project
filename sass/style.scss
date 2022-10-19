@@ -19,6 +19,7 @@ body {
     padding: 0;
     font-family: $serif;
     font-weight: 300;
+    background: #f7f7f7;
 }
 
 h1,
@@ -33,9 +34,10 @@ h6 {
 h1 {
     text-transform: uppercase;
     text-align: center !important;
-    padding-top: 74px;
+    margin: 0;
+    padding-top: 112px;
     font-weight: 800;
-    font-size: 38px;
+    font-size: 37px;
     margin-bottom: 9px;
 }
 
@@ -86,6 +88,7 @@ nav {
         padding: 0;
         margin: 0;
         margin-right: 18px;
+
         li {
             padding-left: 39px;
         }
@@ -184,39 +187,101 @@ nav {
 
 /* Services */
 
-.services .wrapper{
-    text-align: center;
-    color: $color-2;
-    h3 {
-        color: black;
-        margin-top: 15px;
-        margin-bottom: 9px;
-    }
-    p {
-        margin-top: 0;
-    }
-    .row {
-        padding-top: 75px;
-        height: 380px;
+.services {
+    background: #ffff;
+    .wrapper {
+        text-align: center;
+        color: $color-2;
+    
+
+        h3 {
+            color: black;
+            margin-top: 15px;
+            margin-bottom: 9px;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        .row {
+            padding-top: 75px;
+            height: 380px;
+        }
     }
 }
 
 /* Portfolio */
 
 .portfolio {
+
     .row {
-        padding-top: 73px;
+        padding-top: 75px;
+        display: inline-flex;
+        // column-gap: 20px;
     }
+
+    .card {
+        width: 293px;
+        height: 392px;
+        background: #ffff;
+    }
+
     .card-title {
-        margin-top: 20px;
+        margin-top: 21px;
         margin-bottom: 0;
+        font-size: 17px;
     }
+
     .card-text {
         font-style: italic;
-        font-size: 12px;
+        font-size: 14px;
     }
+
     text-align: center;
+
     .col-4 {
-        height: 443px;
+
+        margin-bottom: 52px;
+    }
+}
+
+/* Footer */
+
+footer {
+    background: #ffff;
+
+    .container {
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .footer-txt {
+        position: absolute;
+        font-family: $sans-serif;
+        font-size: 13px;
+        left: 20px;
+        bottom: 34px;
+    }
+
+    .row {
+        display: inline-flex;
+        // flex-direction: row;
+        padding-top: 110px;
+
+        // justify-content: flex-end;
+        .col {
+            padding: 0 4px;
+        }
+    }
+    img {
+        filter: grayscale(100) brightness(0.8);
+        cursor: pointer;
+    }
+    img:hover {
+        filter: grayscale(0);
+        transition: all 0.5s;
     }
 }
