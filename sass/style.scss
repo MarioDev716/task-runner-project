@@ -11,7 +11,7 @@ $color-2: #7f7f7f;
 
 * {
     box-sizing: border-box;
-    // border: 1px dotted rgb(255, 0, 0); //my lovely helper!
+    // border: 1px dotted rgba(255, 0, 0, 0.479); //my lovely helper!
 }
 
 body {
@@ -107,7 +107,19 @@ nav {
 
     a:hover {
         border-bottom: 2px solid $color-accent;
+    }
+}
 
+@media screen and (max-width: 1000px) {
+    nav {
+        transition: all 0.5s;
+    }
+    nav .col + .col{
+        display: none;
+    }
+    nav .golden-logo {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -162,6 +174,7 @@ nav {
         font-size: 64px;
         font-weight: 500;
         font-style: italic;
+        text-align: center;
     }
 
     .btn {
