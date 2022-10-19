@@ -116,7 +116,7 @@ nav {
 .splash {
     background: #7f7f7f;
     background-image: url("/images/zadanie-golden-splash.png");
-    height: 700px;
+    min-height: 700px;
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -172,7 +172,9 @@ nav {
         width: 240px;
         height: 65px;
         margin-top: 45px;
+        margin-bottom: 80px;
         cursor: pointer;
+        transition: all 1s;
 
         a {
             color: #ffff;
@@ -184,12 +186,24 @@ nav {
         }
 
     }
+    .btn:hover {
+        rotate: 3deg;
+        transition: all 0.3s;
+    }
 }
 
 /* Services */
 
 .services {
     background: #ffff;
+
+    .col-12 {
+        padding: 20px 80px;
+    }
+
+    .col-lg-4 {
+        padding: 0 15px;
+    }
 
     .wrapper {
         text-align: center;
@@ -208,7 +222,8 @@ nav {
 
         .row {
             padding-top: 75px;
-            height: 380px;
+            min-height: 380px;
+            display: flex;
         }
     }
 }
@@ -220,6 +235,7 @@ nav {
     .row {
         padding-top: 75px;
         display: inline-flex;
+        justify-content: center;
         // column-gap: 20px;
     }
 
@@ -227,6 +243,15 @@ nav {
         width: 293px;
         height: 392px;
         background: #ffff;
+        cursor: pointer;
+        transition: all 1s;
+        img {
+            width: 100%;
+        }
+    }
+    .card:hover {
+        rotate: 3deg;
+        transition: all 0.5s;
     }
 
     .card-title {
@@ -242,9 +267,14 @@ nav {
 
     text-align: center;
 
-    .col-4 {
-
+    .col-lg-4 {
         margin-bottom: 52px;
+    }
+
+    .col-12 {
+        margin-bottom: 52px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -282,11 +312,25 @@ footer {
     img {
         filter: brightness(0.9) grayscale(0);
         cursor: pointer;
-        transition: all 0.9s;
+        transition: all 1s;
     }
 
     img:hover {
         filter: brightness(0.9) grayscale(50);
-        transition: all 0.9s;
+        transition: all 0.3s;
+        margin-top: -5px;
+        rotate: 3deg;
+    }
+}
+
+/* Media screen smaller than 1000px */
+
+@media screen and (max-width: 1000px) {
+    footer {
+        .footer-txt {
+            top: 60px;
+            left: auto;
+            right: auto;
+        }
     }
 }
