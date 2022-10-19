@@ -100,6 +100,7 @@ nav a:hover {
   background-image: url("/images/zadanie-golden-splash.png");
   height: 700px;
   background-size: cover;
+  background-position: 50% 50%;
 }
 
 .splash-text {
@@ -231,10 +232,11 @@ footer .row .col {
   padding: 0 4px;
 }
 footer img {
-  filter: grayscale(100) brightness(0.8);
+  filter: brightness(0.9) grayscale(0);
   cursor: pointer;
+  transition: all 0.9s;
 }
 footer img:hover {
-  filter: grayscale(0);
-  transition: all 0.5s;
+  filter: brightness(0.9) grayscale(50);
+  transition: all 0.9s;
 }/*# sourceMappingURL=style.css.map */
